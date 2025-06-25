@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-str1, str2 = "Holberton", "School"
-print((str1 + " " + str2) * 3)
-print((str1 + " " + str2)[:9])
+str1 = "Holberton"
+str2 = "School"
+print(f"Welcome to {str1} {str2}!")
+print("Welcome to Battery Street!")
