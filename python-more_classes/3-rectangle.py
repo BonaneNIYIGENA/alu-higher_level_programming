@@ -1,18 +1,20 @@
 #!/usr/bin/python3
-"""Defines a class Rectangle that represents a rectangle."""
+"""Defines a Rectangle class with string representation."""
 
 
 class Rectangle:
-    """Represents a rectangle."""
+    """Represents a rectangle with width, height, area, and perimeter."""
 
     def __init__(self, width=0, height=0):
-        """Initialize the rectangle with optional width and height."""
-        self.width = width
+        """Initialize a new rectangle instance."""
+        self.__width = 0
+        self.__height = 0
         self.height = height
+        self.width = width
 
     @property
     def width(self):
-        """Retrieve the width."""
+        """Retrieve the width of the rectangle."""
         return self.__width
 
     @width.setter
@@ -26,7 +28,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Retrieve the height."""
+        """Retrieve the height of the rectangle."""
         return self.__height
 
     @height.setter
@@ -49,8 +51,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """Return a string representation of the rectangle using '#' characters."""
+        """Return the rectangle as a string of '#' characters."""
         if self.__width == 0 or self.__height == 0:
             return ""
-        row = "#" * self.__width
-        return "\n".join([row for _ in range(self.__height)])
+        return "\n".join(["#" * self.__width for _ in range(self.__height)])
