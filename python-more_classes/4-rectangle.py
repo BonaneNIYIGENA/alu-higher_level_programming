@@ -6,7 +6,7 @@ Includes eval()-compatible representation.
 
 
 class Rectangle:
-    """Represents a rectangle with printable and recreatable representations."""
+    """Rectangle with string and eval representations."""
 
     def __init__(self, width=0, height=0):
         """Initialize rectangle with optional width and height."""
