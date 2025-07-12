@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class with eval()-compatible representation."""
+"""Defines a Rectangle class.
+
+Includes eval()-compatible representation.
+"""
 
 
 class Rectangle:
