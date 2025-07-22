@@ -1,3 +1,3 @@
 #!/bin/bash
-# Sends GET request and displays body only for status 200
-curl -s -o /tmp/body -w "%{http_code}" "$1" | { read status; [ "$status" -eq 200 ] && cat /tmp/body; }
+# Bash script that takes in a URL, sends a GET request to the URL, and displays the body of the response
+curl -sfL "$1" -X GET
